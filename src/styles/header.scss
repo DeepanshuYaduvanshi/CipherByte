@@ -1,0 +1,34 @@
+@import "colors";
+// styling the navbar
+nav {
+  // border : 2px solid red;
+  width: 100%;
+  padding: 1rem;
+  display: flex; // ek row me aa jayenge
+  justify-content: space-between; // row manage
+  align-items: center; // vertical se center me
+  position: sticky; // navbar stick rhega complete page pr also when we go down on page
+  // differnce between sticky and fixed -> sticky apni jagah ghere rkhega and fixed stick to rhega but jagah nhi gherega like absolute bhi jagah nhi gherta and relative gherta h to fixed to man skte ho absolute + sticky 
+  background-color: $first; // fetch color from color.scss
+  top: 0%;  // todo
+  z-index: 10; // todo
+  > h1 {
+    text-transform: uppercase;  // heading text uppercase
+  }
+
+  > main {
+    width: 70%; // 70% of totat width is taken
+   
+    display: flex; // all element row me aa jayenege
+    justify-content: flex-end; // box ke end me chle jayenge sare home contact , etc elements
+//    anchor tag which is link now 
+    >a{
+          color: $dark; 
+          margin: 1rem; // margin between home contact etc and with main box
+          // manage hover of a / link tag here
+          &:hover{
+               color : $third; // color change on hovering
+          }
+     }
+  }
+}

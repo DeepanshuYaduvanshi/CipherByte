@@ -1,0 +1,24 @@
+// sass syntax              | scss syntax
+// p                        | p{
+//  background-color : red; |    background-color : red;
+//   a                      |    a {
+//    color : blue;         |      color : blue;
+//                          |      }
+//                          |  }
+// sass me ek space ki galti and sb kuch khtm , so prefer scss over sass
+
+// google fonts import link here
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin : 0%;
+    padding : 0%;
+    font-family: "Roboto" , sans-serif;
+    box-sizing: border-box; // Defines how the width and height of an element are calculated: should they include padding and borders, or not, here we use border-box which ensure that size of box is fix and adding padding cannot increase box size
+    text-decoration: none; // underline htane ke liye
+    scroll-behavior: smooth; // The scroll-behavior property specifies whether to smoothly animate the scroll position, instead of a straight jump, when the user clicks on a link within a scrollable box.
+}
+
+
+
+
